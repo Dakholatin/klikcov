@@ -1,0 +1,94 @@
+<?php
+
+	if($id_user){
+		header("location: ". BASE_URL);
+	}
+
+?>
+
+<div id="container-user-akses">
+
+	<link href="<?php echo BASE_URL."css/formtable.css";?>" type="text/css" rel="stylesheet"/>
+	<form action= "<?php echo BASE_URL."proses-inputPDPAssessment.php"; ?>" method="POST">
+		<div>
+			<p>
+			<label>Nomor Pasien </label>
+			<input class="text" type="text" name="text" required/></td>
+		</p>
+		</div>
+
+		<table class="tabel" cellpadding="30">
+		<div class="element-form">
+			<tr>
+				<td>Fever</td>
+				<td><input class="text" type="text" name="text" placeholder="Assessment" required /></td>
+			</tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>Age</td>
+				<td><input class="text" type="text" name="text" placeholder="Assessment" required /></td>
+			<tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>Sex</td>
+				<td><input class="text" type="text" name="text" placeholder="Assessment" required /></td>
+			<tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>Nasopharyngeal swab PCR</td>
+				<td><input type="text" name="text" required/></td>
+			</tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>Virus Isolation from respiratory track</td>
+				<td><input type="text" name="text" required/></td>
+			</tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>Bronchoalveoral lavage/sputum PCR</td>
+				<td><input type="text" name="text" required/></td>\
+			<tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>Stool PCR</td>
+				<td><input type="text" name="text" required/></td>
+			</tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>IgM antibody</td>
+				<td><input type="text" name="text" required/></td>
+			</tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td>IgG antibody</td>
+				<td><input type="text" name="email" required/></td>
+			</tr>
+		</div>
+
+		<div class="element-form">
+			<tr>
+				<td><input type="submit" value="save" /></td>
+			</tr>
+		</div>
+		</table>
+
+	</div>
+
+	</form>
+</div>
